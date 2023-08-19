@@ -1,0 +1,73 @@
+/* .phy{
+    background-color: #FBE4FF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+} */
+
+
+
+.philosophy{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.philosophy__body{
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.philosophy__title {
+    color: black;
+}
+
+.philosophy__text {
+    color: var(--bg-color-darkGrey-default-page);
+    max-width: 500px;
+}
+
+
+.container.philosophy{
+    padding: 0%;
+} 
+
+.philosophy__photo {
+    max-width: 600px;
+    width: 100%;
+    /* padding: 40px 0; */
+    box-sizing: border-box;
+    margin: auto;
+    
+
+
+    
+
+}
+
+.philosophy__linkedin {
+    color: black;
+    text-decoration: underline;
+}
+
+
+@media (min-width: 620px) {
+
+    .philosophy__photo{
+        max-width: 500px;
+    }
+
+    .philosophy {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+
+    }
+
+    
+   
+    
+}

@@ -1,0 +1,172 @@
+@import './1header.css';
+@import './2about.css';
+@import './3work.css';
+@import './4philosophy.css';
+@import './5skill.css';
+@import './6projects.css';
+@import './7behance.css';
+@import './8contact.css';
+@import './9footer.css';
+
+
+/*
+==============================
+  * CSS TABLE CONTENT *  
+==============================
+1. GOOGLE FONT
+2. VARIABLES CSS
+3. BASE
+4. REUSABLE CSS CLASSES
+5. HEADER & NAV
+6. BREAKPOINTS
+==============================
+  * END TABLE CONTENT *  
+==============================
+*/
+/* ============ VARIABLES CSS ============= */
+:root {
+  --header-height: 76px;
+
+  /* Colores */
+  --bg-color-white: #ffffff;
+  --bg-color-black-default: #000000;
+  --bg-color-darkBlue-container-header: #181823;
+  --bg-color-darkBlue-container-footer-firstbox: #181823;
+  --bg-color-peach-container-secondbox: rgb(255, 243, 228);
+  --bg-color-pinkLacecontainer-thirdbox: rgb(236, 229, 240);
+  --bg-color-darkGrey-default-page: rgb(91, 104, 118);
+  --bg-color-yellow-icon: rgb(241, 143, 1);
+  --bg-color-yellow-icon-shadow: rgba(241, 145, 1, 0.5);
+  
+  --text-color-lightGrey-primary: #8491A0;
+
+
+  /* Tipografía */
+  --body-font:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --big-font-size: 40px;
+  --normal-font-size: 20px;
+  --small-font-size: 18px;
+  --smaller-font-size: 16px;
+
+  /* Grosores */
+  --font-medium: 400;
+  --font-semi-bold: 700;
+  --font-bold: 800;
+
+  /* Margenes */
+  --mr-1: 8px;
+  --mr-2: 16px;
+  --mr-3: 20px;
+  --mr-4: 26px;
+  --mr-5: 32px;
+
+  /* z-index */
+  --z-modal: 10;
+  --z-fixed: 100;
+
+  /* Sombras */
+  --box-shadow: 0px 10px 100px rgba(0, 0, 0, .10);
+  --button-shadow: 0px 3px 10px var(--bg-color-yellow-icon);
+ 
+
+  --text-shadow: 2px 3px #ee991a55
+}
+
+
+/* esto no entendi */
+@media (min-width: 768px) {
+  :root {
+    --header-height: 90px;
+    --big-font-size: 38px;
+    --normal-font-size: 18px;
+    --small-font-size: 16px;
+    --smaller-font-size: 14px;
+  }
+}
+
+/* ============ BASE ============= */
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  margin: 0;
+  background-color: var(--bg-color-black-default);
+  color: white;
+
+}
+
+h1,
+h2,
+h3  {
+    margin: 0;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 30px;
+
+    @media (min-width: 620px){
+      padding: 50px 60px;
+    }
+
+
+}
+
+.container__header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 30px;
+
+    @media (min-width: 620px){
+      padding: 20px 60px;
+    }
+}
+
+.primary-color {
+    color: var(--bg-color-pinkLace-icon);
+}
+
+.btn {
+  width: 100%;
+  display: inline-block;
+  padding: 1.5rem 4rem;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+  
+}
+
+.btn:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--button-shadow);
+  
+}
+
+

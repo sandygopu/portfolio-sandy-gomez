@@ -1,0 +1,60 @@
+.behance{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.behance__body{
+    max-width: 1200px;
+    margin: auto;
+    padding: 80px 30px;
+}
+
+.behance__title {
+    color: black;
+}
+
+.behance__text {
+    color: var(--bg-color-darkGrey-default-page);
+    max-width: 500px;
+}
+
+.behance__photo {
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: auto;
+
+}
+
+
+.container.behance{
+    padding: 0;
+}
+
+
+
+
+
+.behance__link {
+    color: black;
+    text-decoration: underline;
+}
+
+
+
+
+@media (min-width: 620px) {
+    .behance__photo{
+        max-width: 500px;
+    }
+
+
+    .behance {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+    }
+    
+}

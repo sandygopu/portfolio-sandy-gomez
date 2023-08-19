@@ -1,0 +1,84 @@
+/* <!-- section skillset --> */
+.skillset__title{
+    color: black;
+}
+
+.skillset__text{
+    color: black;
+}
+
+.skill__cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 40px 0;
+}
+
+.skill__card{
+    background-color: var(--bg-color-darkBlue-container-footer-firstbox);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.card__title{
+    max-width: 500px;
+}
+
+.card__text {
+    max-width: 500px;
+    color: var(--text-color-lightGrey-primary);
+}
+
+.header__logo{
+    align-items: center;
+    padding: 0;
+}
+
+.header__logo-sandy-gomez{
+    max-width: 190px;
+    align-self: auto;
+}
+
+.skill__card .bx {
+    font-size: 50px;
+}
+
+.soft-skill__title{
+    color: black;
+}
+
+.soft-skill__card:hover,
+.skill__card:hover {
+    transform: translateY(-4px);
+
+}
+
+
+@media (min-width: 620px) {
+    .card__text{
+        max-width: 300px;
+    }
+}
+
+
+
+
+/* <!-- section Soft Skill --> */
+
+
+.soft-skill__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 40px 0;
+
+}
+
+.soft-skill__card{
+    background-color: var(--bg-color-darkBlue-container-footer-firstbox);
+    padding: 0 20px;
+    border-radius: 10px;
+
+}

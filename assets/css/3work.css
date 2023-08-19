@@ -1,0 +1,48 @@
+.work__works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 40px 0;
+    max-width: 100%;
+
+}
+
+.work__title2{
+    font-size: 20px;
+    color: var(--text-color-lightGrey-primary);
+    font-weight: bolder;
+}
+
+.work__card:hover{
+    transform: translateY(-4px);
+}
+
+.work__name {
+    font-weight: var(--font-semi-bold);
+    
+}
+
+.work__text{
+    max-width: 300px;
+}
+
+
+.work__number{
+    font-size: 80px;
+    font-weight: 0;
+    color: var(--bg-color-pinkLace-icon-shadow);
+}
+
+@media (min-width: 620px) {
+    .work__works {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+
+
+}

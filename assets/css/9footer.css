@@ -1,0 +1,27 @@
+
+.footer__social-title{
+    padding: 40px 0;
+}
+
+.footer__social-list {
+    display: flex;
+    gap: var(--mr-2);
+    font-size: 1.5rem;
+  }
+  
+.footer__social-link {
+    color: #fff;
+    transition: text-shadow .3s;
+  }
+  
+.footer__social-link:hover{
+   text-shadow: var(--text-shadow);
+  }
+  
+.footer__copy {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    border-top: 1px solid var(--bg-color-white);
+    padding-top: 2rem;
+  }

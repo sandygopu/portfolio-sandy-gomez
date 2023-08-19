@@ -1,0 +1,77 @@
+/* .contact{
+    justify-content: center;
+
+} */
+
+
+.contact__form-title{
+    padding: 20px 0;
+}
+.contact__form-group {
+    margin-bottom: var(--mr-4);
+  }
+  
+.contact__form-label {
+    display: block;
+    margin-bottom: var(--mr-1);
+  }
+
+.contact__form-input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: var(--font-semi-bold);
+    border-radius: 5px;
+    background-color: var(--bg-color-darkBlue-container-footer-firstbox);
+    border: 1px;
+    
+  }
+
+  .contact__text{
+    color: var(--text-color-lightGrey-primary);
+    max-width: 500px;
+  }
+
+.btn.contact__form-button {
+    background-color: var(--bg-color-yellow-icon);
+    color: var(--bg-color-white);
+    font-weight: bold;
+    font-size: var(--small-font-size);
+
+}
+  
+textarea {
+    resize: none;
+  }
+
+.whatsapp,
+.number,
+.mail,
+.maps {
+  color: var(--text-color-lightGrey-primary);
+}
+
+
+
+
+  @media (min-width: 620px) {
+    .container .contact {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       }
+
+    .contact__title{
+      font-size: var(--big-font-size);
+    }
+
+    .contact__form-input {
+      width: 500px;
+    }
+}
+
+
+
+
+
+  
