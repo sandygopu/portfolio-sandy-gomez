@@ -11,6 +11,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    min-height: 700px;
 
 }
 
@@ -32,12 +33,15 @@
 
 .container.philosophy{
     padding: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 } 
 
 .philosophy__photo {
+
     max-width: 600px;
     width: 100%;
-    /* padding: 40px 0; */
     box-sizing: border-box;
     margin: auto;
     

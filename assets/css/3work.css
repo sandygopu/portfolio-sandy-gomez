@@ -1,10 +1,14 @@
+
+
 .work__works {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 15px;
     padding: 40px 0;
     max-width: 100%;
+    min-height: 525px;
 
 }
 
@@ -12,6 +16,7 @@
     font-size: 20px;
     color: var(--text-color-lightGrey-primary);
     font-weight: bolder;
+    padding-top: 20px;
 }
 
 .work__card:hover{

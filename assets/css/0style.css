@@ -129,6 +129,7 @@ img {
     max-width: 1200px;
     margin: auto;
     padding: 50px 30px;
+  
 
     @media (min-width: 620px){
       padding: 50px 60px;
@@ -136,6 +137,8 @@ img {
 
 
 }
+
+
 
 .container__header {
     max-width: 1200px;

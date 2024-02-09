@@ -1,7 +1,7 @@
 const typed = new Typed('.typed', {
 	strings: [
-		'<i class="about__typed">Front-End Development</i>',
-		'<i class="about__typed">Backend Development</i>',
+		'<i class="about__typed">Front-End Developer</i>',
+		'<i class="about__typed">Backend Developer</i>',
 		'<i class="about__typed">Full Stack</i>'
 	],
 

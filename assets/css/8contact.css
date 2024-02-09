@@ -17,6 +17,7 @@
   }
 
 .contact__form-input {
+    color: var(--bg-color-white);
     width: 100%;
     padding: 1rem;
     font-size: 1.2rem;
@@ -41,6 +42,7 @@
 }
   
 textarea {
+  color: var(--bg-color-white);
     resize: none;
   }
 

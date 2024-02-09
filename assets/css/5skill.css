@@ -1,10 +1,10 @@
 /* <!-- section skillset --> */
 .skillset__title{
-    color: black;
+    color:white;
 }
 
 .skillset__text{
-    color: black;
+    color: white;
 }
 
 .skill__cards {
@@ -45,7 +45,7 @@
 }
 
 .soft-skill__title{
-    color: black;
+    color: white;
 }
 
 .soft-skill__card:hover,

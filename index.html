@@ -28,9 +28,11 @@
         <div class="header__menu">
         <ul class="header__nav">
           <li class="nav__item"><a class="header__link" href="#home">Home</a></li>
-          <li class="nav__item"><a class="header__link" href="#work">Experience</a></li>
+          <li class="nav__item"><a class="header__link" href="#about_me">About me</a></li>
+          
           <li class="nav__item"><a class="header__link" href="#skillset">Skillset</a></li>
           <li class="nav__item"><a class="header__link" href="#projects">Projects</a></li>
+          <li class="nav__item"><a class="header__link" href="#work">Experience</a></li>
           <li class="nav__item"><a class="header__link" href="#contact">Contact</a></li>
         </ul>
         <div class="menu__icon">
@@ -40,9 +42,11 @@
 
             <ul class="header__nav2">
               <li class="nav__item"><a class="header__link" href="#home">Home</a></li>
-              <li class="nav__item"><a class="header__link" href="#work">Experience</a></li>
+              <li class="nav__item"><a class="header__link" href="#about_me">About me</a></li>
+              
               <li class="nav__item"><a class="header__link" href="#skillset">Skillset</a></li>
               <li class="nav__item"><a class="header__link" href="#projects">Projects</a></li>
+              <li class="nav__item"><a class="header__link" href="#work">Experience</a></li>
               <li class="nav__item"><a class="header__link" href="#contact">Contact</a></li>
             </ul>
   
@@ -85,10 +89,10 @@
             <a class="home__social-link" href="https://github.com/sandygopu" target="_blank"
               ><i class='bx bxl-github'></i></a>
           </li>
-          <li class="home__social-item">
+          <!-- <li class="home__social-item">
             <a class="home__social-link" href="https://twitter.com/SandyanaGomez" target="_blank"
               ><i class='bx bxl-twitter'></i></a>
-          </li>
+          </li> -->
         </ul>
 
         <!-- Aqui termina c: -->
@@ -105,41 +109,28 @@
       </div>
       </section>
 
-    <!-- section work -->
-    <section id="work" class="container">
-        <h3 class="work__title2">WORK EXPERIENCE</h3>
-        <H2 class="work__title1">Commpanies I have worked for in the past.
-        </H2>
+    <!-- section philosophy -->
+    <section id="about_me" style="background-color: #FFF3E4;">
+      <div class="container philosophy">
+      
+        <div class="philosophy__body">
+        <h2 class="philosophy__title">Philosophy & values</h2>
+        <p class="philosophy__text">I believe in creating powerful and functional web experiences that generate significant value for users. My approach is based on combining visual aesthetics with intuitive usability, always seeking to balance innovation with practical functionality.</p>
 
-        <div class="work__works">
-          <!--work 01-->
-          <div class="work__card">
-            <h2 class="work__number">01</h2>
-            <p class="work__name"><span style="color:orange">ZEGOPA</span>, Content creator</p>
-            <p class="work__text">Publishable content for social networks: instagram and facebook</p>
-           </div>
-
-          <!--work 02-->
-          
-         <div class="work__card">
-          <h2 class="work__number">02</h2>
-          <p class="work__name"><a href="https://www.instagram.com/tomategrafico/ " target="_blank" ><span style="color:red">TOMATE GRÁFICO</span></a>, Content creator</p>
-          <p class="work__text">Publishable content for social networks: instagram and facebook</p>
-          </div>
-
-          <!--work 02-->
-          <div class="work__card">
-          <h2 class="work__number">03</h2>
-          <p class="work__name"><span style="color:rgb(241, 143, 1)">GOBES</span>, Content creator</p>
-          <p class="work__text">Publishable content for social networks: instagram and facebook</p>
-          </div>
+        <a href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/" class="philosophy__linkedin" target="_blank">Check my Linkedin</a>
         </div>
+        
+        <a href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/" target="_blank"><img class="philosophy__photo" src="./assets/img/linkedin.png" alt="profile-linkedin" ></a>
+        
+        
+      </div>
+      
     </section>
 
      
 
     <!-- section skillset -->
-    <div  style="background-color: #FFF3E4;" >
+    <div >
       <section  id="skillset" class="container skillset">
       <div class="skillset__info">
         <h2 class="skillset__title">Skillset</h2>
@@ -173,7 +164,7 @@
     </section></div>
 
     <!-- section Soft Skill -->
-    <div style="background-color: #FFF3E4;">
+    <div >
       <section  class="container soft-skill">
       <h2 class="soft-skill__title">Soft-Skill</h2>
 
@@ -213,89 +204,162 @@
     </section></div>
 
     <!-- section My Projects -->
+    <div style="background-color: #FFF3E4;">
     <section id="projects" class="container project">
       
+      <!-- Tittle of projects -->
+      <div class="project__cardinfo" >
+        <h3 class="project__title2">MY PROJECTS</h3>
+        <h2 class="project__title3"> Work that I've done for the past 1 year </h2>
+      </div>
 
 
-      <div class="project__cards">
+      <div class="carrusel-list" id="carrusel-list">
 
-        <!-- Tittle of projects -->
-        <div class="project__cardinfo" >
-          <h3 class="project__title2">MY PROJECTS</h3>
-          <h2 class="project__title">Work that I've done for the past 1 year</h2>
+        <button class="carrusel-arrow carrusel-prev" id="button-prev" data-button="button-prev"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-left"
+                    class="svg-inline--fa fa-chevron-left fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M34.52 239.03L228.87 44.69c9.37-9.37 24.57-9.37 33.94 0l22.67 22.67c9.36 9.36 9.37 24.52.04 33.9L131.49 256l154.02 154.75c9.34 9.38 9.32 24.54-.04 33.9l-22.67 22.67c-9.37 9.37-24.57 9.37-33.94 0L34.52 272.97c-9.37-9.37-9.37-24.57 0-33.94z">
+                    </path>
+                </svg>
+        </button>
+
+        <div class="carrusel-track" id="track">
+
+          <div class="carrusel">
+
+              <div class="carrusel__info">
+
+                <a href="https://api-de-clima02-sandy-gomez.netlify.app/" target="_blank">
+                  <picture>
+                    <img class="project__photo" src="./assets/img/project1.jpg" alt="project1">
+                  </picture>
+                  
+                <h3 class="project__title">Weather app</h3> 
+                <p class="project__text">An application that displays weather data, obtaining the following data from the API: country, city, icon that describes the weather, temperature in degrees Celsius, and a button that changes the temperature to degrees Fahrenheit. <br><br> Used: HTML5 + JAVASCRIPT + CSS3 + REACT</p>
+                </a>
+
+              </div>
+
+          </div>
+
+          <div class="carrusel">
+            
+            <div class="carrusel__info">
+
+              <a href="https://pokedex-app-sandy-gomez.netlify.app/#/pokedex" target="_blank">
+                <picture>
+                  <img class="project__photo" src="./assets/img/project2.png" alt="project2">
+                </picture>
+                
+                
+              <h3 class="project__title">Pokedex app</h3> 
+              <p class="project__text">a web application that allows us to see the information of our favorite pokemons. <br><br>Used: HTML5 + JAVASCRIPT + CSS3 + REACTJS</p>
+              </a>
+
+            </div>
+
         </div>
 
-        <!-- Project 1 -->
-        <div class="project__card1">
-          <a href="https://api-de-clima02-sandy-gomez.netlify.app/" target="_blank"><img class="project__photo" src="./assets/img/project1.jpg" alt="project1"></a>
+          <div class="carrusel">
 
-          <div class="project__info">
-            <h3 class="project__title">Weather app</h3>
-            <p class="project__text">An application that displays weather data, obtaining the following data from the API: country, city, icon that describes the weather, temperature in degrees Celsius, and a button that changes the temperature to degrees Fahrenheit. <br><br> Used: HTML5 + JAVASCRIPT + CSS3 + REACT</p>
-          </div>   
+            <div class="carrusel__info">
+
+              <a href="https://e-commers-sandy-gomez.netlify.app/" target="_blank">
+                <picture>
+                  <img class="project__photo" src="./assets/img/project3.jpg" alt="project3">
+                </picture>
+                
+              <h3 class="project__title">E-commerce ZEGOPA hardware store</h3> 
+              <p class="project__text">An application that displays weather data, obtaining the following data from the API: country, city, icon that describes the weather, temperature in degrees Celsius, and a button that changes the temperature to degrees Fahrenheit. <br><br> Used: HTML5 + JAVASCRIPT + CSS3 + REACT</p>
+              </a>
+
+            </div>
+
         </div>
 
-        <!-- Project 2 -->
-        <div class="project__card2">
-          <a href="https://pokedex-app-sandy-gomez.netlify.app/#/pokedex" target="_blank"><img class="project__photo" src="./assets/img/project2.png" alt="project2"></a>
-          
+        <div class="carrusel">
 
-          <div class="project__info">
-            <h3 class="project__title">Pokedex app</h3>
-            <p class="project__text">a web application that allows us to see the information of our favorite pokemons. <br><br>Used: HTML5 + JAVASCRIPT + CSS3 + REACTJS </p>
-          </div>   
-        </div>
+          <div class="carrusel__info">
 
-        <!-- Project 3 -->
-        <div class="project__card3">
-          <a href="https://e-commers-sandy-gomez.netlify.app/"  target="_blank"><img class="project__photo" src="./assets/img/project3.jpg" alt="project3"></a>
-          
-
-          <div class="project__info">
-            <h3 class="project__title">E-commerce ZEGOPA hardware store</h3>
-            <p class="project__text">An e-commerce with the functionality of adding hardware store products to the cart. <br><br> Used: HTML5 + JAVASCRIPT + CSS3 </p>
-          </div>   
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project__card4">
-          <a href="https://fortune-cookie2-sandy-gomez.netlify.app/"  target="_blank"><img class="project__photo" src="./assets/img/project4.png" alt="project4"></a>
-          
-
-          <div class="project__info">
-            <h3 class="project__title">Fortune cookie</h3>
+            <a href="https://fortune-cookie2-sandy-gomez.netlify.app/" target="_blank">
+              <picture>
+                <img class="project__photo" src="./assets/img/project4.png" alt="project4">
+              </picture>
+              
+            <h3 class="project__title">Weather app</h3> 
             <p class="project__text">The idea of this project was to create a page that can generate a random fortune for us by clicking on a button. <br><br> Used: HTML5 + JAVASCRIPT + CSS3 + REACT</p>
-          </div>   
+            </a>
+
+          </div>
+
+      </div>
+
+          
+
         </div>
 
-        <!-- Button of more projects -->
-        <div class="project__buttons">
-          <button class="btn project__button" type="button">VIEW ALL PROJECTS</button>
+          <button class="carrusel-arrow carrusel-next" id="button-next" data-button="button-next"
+                onclick="app.processingButton(event)">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="chevron-right"
+                    class="svg-inline--fa fa-chevron-right fa-w-10" role="img" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 320 512">
+                    <path fill="currentColor"
+                        d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z">
+                    </path>
+                </svg>
+            </button>
+
+          
+
         </div>
-        </div>
+
+      </div>
+
+    </section>
+  </div>
+
+
+
+    <!-- section work -->
     
+    <section id="work" class="container" >
+      <h3 class="work__title2">WORK EXPERIENCE</h3>
+      <H2 class="work__title1">Commpanies I have worked for in the past.
+      </H2>
 
-      </div>
-    </section>
+      <div class="work__works">
+        <!--work 01-->
+        <div class="work__card">
+          <h2 class="work__number">01</h2>
+          <p class="work__name"><span style="color:orange">ZEGOPA</span>, Content creator</p>
+          <p class="work__text">Publishable content for social networks: instagram and facebook</p>
+         </div>
 
-
-    <!-- section philosophy -->
-    <section style="background-color: #FFF3E4;">
-      <div class="container philosophy">
-      
-        <div class="philosophy__body">
-        <h2 class="philosophy__title">Philosophy & values</h2>
-        <p class="philosophy__text">I believe in creating powerful and functional web experiences that generate significant value for users. My approach is based on combining visual aesthetics with intuitive usability, always seeking to balance innovation with practical functionality.</p>
-
-        <a href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/" class="philosophy__linkedin" target="_blank">Check my Linkedin</a>
+        <!--work 02-->
+        
+       <div class="work__card">
+        <h2 class="work__number">02</h2>
+        <p class="work__name"><a href="https://www.instagram.com/tomategrafico/ " target="_blank" ><span style="color:red">TOMATE GRÁFICO</span></a>, Content creator</p>
+        <p class="work__text">Publishable content for social networks: instagram and facebook</p>
         </div>
-        
-        <a href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/" target="_blank"><img class="philosophy__photo" src="./assets/img/linkedin.png" alt="profile-linkedin" ></a>
-        
-        
+
+        <!--work 02-->
+        <div class="work__card">
+        <h2 class="work__number">03</h2>
+        <p class="work__name"><span style="color:rgb(241, 143, 1)">GOBES</span>, Content creator</p>
+        <p class="work__text">Publishable content for social networks: instagram and facebook</p>
+        </div>
       </div>
-      
-    </section>
+  </section>
+
+        
+
+
+    
 
     <!-- section Behance -->
     <!-- <section style="background-color: rgb(236, 229, 240);">
@@ -402,6 +466,7 @@
      <!-- libreria -->
      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
      <script src="./js/main.js"></script>
+     <script src="./js/script.js" ></script>  
 
     </body>
   </main>
@@ -422,18 +487,24 @@
         <ul class="footer__social-list">
           <!-- linkedin -->
           <li class="footer__social-item">
-            <a class="footer__social-link" href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/"><i class="bx bxl-linkedin"></i></a>
+            <a class="footer__social-link" href="https://www.linkedin.com/in/sandy-g%C3%B3mez-569337222/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          </li>
+
+          <!-- git hub -->
+          <li class="footer__social-item">
+            <a class="footer__social-link" href="https://github.com/sandygopu" target="_blank"
+              ><i class='bx bxl-github'></i></a>
           </li>
 
           <!-- twitter -->
-          <li class="footer__social-item">
+          <!-- <li class="footer__social-item">
             <a class="footer__social-link" href="https://twitter.com/SandyanaGomez"><i class="bx bxl-twitter"></i></a>
-          </li>
+          </li> -->
 
           <!-- instagram -->
-          <li class="footer__social-item">
+          <!-- <li class="footer__social-item">
             <a class="footer__social-link" href="https://www.instagram.com/_sandy.gomez/"><i class="bx bxl-instagram"></i></a>
-          </li>
+          </li> -->
 
           <!-- facebook -->
           <!-- <li class="footer__social-item">
@@ -462,6 +533,8 @@
       sendForm.click()
     }
   </script>
+
+  
   </body>
 </html>
 
